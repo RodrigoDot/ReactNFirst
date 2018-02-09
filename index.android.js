@@ -1,15 +1,24 @@
 var React = require('react');
-var Text = require('react-native').Text;
-var View = require('react-native').View;
-var Button = require('react-native').Button;
-var AppRegistry = require('react-native').AppRegistry;
+var {
+  Text,
+  View,
+  Button,
+  AppRegistry
+} = require('react-native');
+
+const geraNumeroAleatorio = () => {
+  var numeroAleatorio = Math.random();
+  numeroAleatorio = Math.floor(numeroAleatorio * 10);
+  alert(numeroAleatorio);
+}
 
 const App = () => {
   return (
     <View>
-      <Text>Hello Rodrigo</Text>
+      <Text>Gerador de numeros randomicos</Text>
       <Button
         title='Gerar numero randomico'
+        onPress={geraNumeroAleatorio}
       />
     </View>
   );
