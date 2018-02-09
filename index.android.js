@@ -1,10 +1,10 @@
-var React = require('react');
-var {
+import React from 'react';
+import {
   Text,
   View,
   Button,
   AppRegistry
-} = require('react-native');
+} from 'react-native';
 
 const geraNumeroAleatorio = () => {
   var numeroAleatorio = Math.random();
